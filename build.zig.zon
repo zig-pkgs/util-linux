@@ -1,0 +1,16 @@
+.{
+    .name = .util_linux,
+    .version = "2.42.4",
+    .fingerprint = 0x74fc2302b94cd640, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.17.0",
+    .dependencies = .{
+        .upstream = .{
+            .url = "https://github.com/util-linux/util-linux/archive/refs/tags/v2.42.4.tar.gz",
+            .hash = "N-V-__8AAPetcQQVQDXRt7bBQeIEg4pSCbpgCp1oWUSrRGPs",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+    },
+}
